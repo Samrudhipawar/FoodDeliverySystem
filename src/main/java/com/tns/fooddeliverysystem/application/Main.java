@@ -5,6 +5,7 @@ public class Main {
         System.out.println("Hello, Food Delivery!");
         System.out.println("Admin");
         System.out.println("java project");
+        System.out.println("Restaurant");
     }
 
 }
