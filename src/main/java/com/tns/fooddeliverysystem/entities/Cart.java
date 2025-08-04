@@ -1,6 +1,9 @@
 package com.tns.fooddeliverysystem.entities;
+<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.Map;
+=======
+>>>>>>> 9b63b36 (initial commit)
 public class Cart {
     private Map<FoodItem, Integer> items = new HashMap<>();
 

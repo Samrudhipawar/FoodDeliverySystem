@@ -1,10 +1,13 @@
 package com.tns.fooddeliverysystem.services;
 
+<<<<<<< HEAD
 import com.tns.fooddeliverysystem.entities.FoodItem;
 import com.tns.fooddeliverysystem.entities.Restaurant;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+=======
+>>>>>>> 9b63b36 (initial commit)
 public class FoodService {
     private Map<Integer, Restaurant> restaurants = new HashMap<>();
 
