@@ -1,16 +1,16 @@
-
 package com.tns.fooddeliverysystem.services;
-import com.tns.fooddeliverysystem.entities.Customer;
-import com.tns.fooddeliverysystem.entities.DeliveryPerson;
-import com.tns.fooddeliverysystem.entities.FoodItem;
-import com.tns.fooddeliverysystem.entities.Order;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import com.tns.fooddeliverysystem.entities.Customer;
+import com.tns.fooddeliverysystem.entities.DeliveryPerson;
+import com.tns.fooddeliverysystem.entities.Order;
+
 public class OrderService {
-    private Map<Integer, Order> orders = new HashMap<>();
-    private Map<Integer, DeliveryPerson> deliveryPersons = new HashMap<>();
+
+    private final Map<Integer, Order> orders = new HashMap<>();
+    private final Map<Integer, DeliveryPerson> deliveryPersons = new HashMap<>();
     private int orderCounter = 1;
 
     public int placeOrder(Customer customer) {
