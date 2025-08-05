@@ -1,15 +1,18 @@
 package com.tns.fooddeliverysystem.services;
 
 //<<<<<<< HEAD
-import com.tns.fooddeliverysystem.entities.FoodItem;
-import com.tns.fooddeliverysystem.entities.Restaurant;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.tns.fooddeliverysystem.entities.FoodItem;
+import com.tns.fooddeliverysystem.entities.Restaurant;
 //=======
 //>>>>>>> 9b63b36 (initial commit)
+
 public class FoodService {
-    private Map<Integer, Restaurant> restaurants = new HashMap<>();
+
+    private final Map<Integer, Restaurant> restaurants = new HashMap<>();
 
     public void addRestaurant(Restaurant restaurant) {
         restaurants.put(restaurant.getId(), restaurant);
@@ -49,8 +52,8 @@ public class FoodService {
                 System.out.println("  - No food items available");
             } else {
                 for (FoodItem item : menu) {
-                    System.out.println("  - Food Item ID: " + item.getId() + ", Name: " + item.getName() +
-                            ", Price: Rs. " + item.getPrice());
+                    System.out.println("  - Food Item ID: " + item.getId() + ", Name: " + item.getName()
+                            + ", Price: Rs. " + item.getPrice());
                 }
             }
         }
@@ -60,10 +63,11 @@ public class FoodService {
         Restaurant restaurant = restaurants.get(restaurantId);
         if (restaurant != null) {
             for (FoodItem item : restaurant.getMenu()) {
-                if (item.getId() == foodItemId) return item;
+                if (item.getId() == foodItemId) {
+                    return item;
+                }
             }
         }
         return null;
     }
 }
-

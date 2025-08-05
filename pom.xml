@@ -6,14 +6,15 @@
     <artifactId>FoodDeliverySystem</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    
+    <!-- JDBC (Database) -->
     <dependencies>
-        <!-- JDBC (Database) -->
+        <!-- MySQL Connector -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
         </dependency>
-
         <!-- Unit Testing -->
         <dependency>
             <groupId>junit</groupId>
