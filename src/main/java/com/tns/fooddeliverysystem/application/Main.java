@@ -1,16 +1,16 @@
 package com.tns.fooddeliverysystem.application;
 
-<<<<<<< HEAD
-=======
-public class Main {
-     public static void main(String[] args) {
-        System.out.println("Hello, Food Delivery!");
-        System.out.println("Admin");
-        System.out.println("java project");
-        System.out.println("Restaurant");
-        System.out.println("Cart");
-    }
->>>>>>> fceb6d0 (Cart commit)
+///<<<<<<< HEAD
+//=======
+//public class Main {
+//     public static void main(String[] args) {
+        //System.out.println("Hello, Food Delivery!");
+       // System.out.println("Admin");
+       // System.out.println("java project");
+     //   System.out.println("Restaurant");
+   //     System.out.println("Cart");
+  //  }
+//>>>>>>> fceb6d0 (Cart commit
 
 import com.tns.fooddeliverysystem.entities.*;
 import com.tns.fooddeliverysystem.services.*;
