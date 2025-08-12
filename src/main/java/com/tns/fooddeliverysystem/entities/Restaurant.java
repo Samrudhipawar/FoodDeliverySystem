@@ -7,18 +7,27 @@ import java.util.List;
 //=======
 //>>>>>>> 9b63b36 (initial commit)
 public class Restaurant {
-    private int id;
-    private String name;
-    private List<FoodItem> menu = new ArrayList<>();
+
+    private final int id;
+    private final String name;
+    private final List<FoodItem> menu = new ArrayList<>();
 
     public Restaurant(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public int getId() { return id; }
-    public String getName() { return name; }
-    public List<FoodItem> getMenu() { return menu; }
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<FoodItem> getMenu() {
+        return menu;
+    }
 
     public void addFoodItem(FoodItem item) {
         menu.add(item);

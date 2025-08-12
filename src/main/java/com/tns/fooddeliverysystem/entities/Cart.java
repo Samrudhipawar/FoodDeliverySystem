@@ -1,11 +1,14 @@
 package com.tns.fooddeliverysystem.entities;
 //<<<<<<< HEAD
+
 import java.util.HashMap;
 import java.util.Map;
+
 ///=======
 //>>>>>>> 9b63b36 (initial commit)
 public class Cart {
-    private Map<FoodItem, Integer> items = new HashMap<>();
+
+    private final Map<FoodItem, Integer> items = new HashMap<>();
 
     public void addItem(FoodItem foodItem, int quantity) {
         items.put(foodItem, items.getOrDefault(foodItem, 0) + quantity);
@@ -26,8 +29,8 @@ public class Cart {
         for (Map.Entry<FoodItem, Integer> entry : items.entrySet()) {
             double cost = entry.getKey().getPrice() * entry.getValue();
             sb.append("Food Item: ").append(entry.getKey().getName())
-              .append(", Quantity: ").append(entry.getValue())
-              .append(", Cost: Rs. ").append(cost).append("\n");
+                    .append(", Quantity: ").append(entry.getValue())
+                    .append(", Cost: Rs. ").append(cost).append("\n");
             total += cost;
         }
         sb.append("Total Cost: Rs. ").append(total).append("\n");

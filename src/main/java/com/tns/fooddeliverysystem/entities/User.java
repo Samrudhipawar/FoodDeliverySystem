@@ -1,9 +1,10 @@
 package com.tns.fooddeliverysystem.entities;
 
 public class User {
-    private int userId;
-    private String username;
-    private long contactNo;
+
+    private final int userId;
+    private final String username;
+    private final long contactNo;
 
     public User(int userId, String username, long contactNo) {
         this.userId = userId;
@@ -11,9 +12,17 @@ public class User {
         this.contactNo = contactNo;
     }
 
-    public int getUserId() { return userId; }
-    public String getUsername() { return username; }
-    public long getContactNo() { return contactNo; }
+    public int getUserId() {
+        return userId;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public long getContactNo() {
+        return contactNo;
+    }
 
     @Override
     public String toString() {
